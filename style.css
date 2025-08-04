@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#nav {
+    margin-top: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+#annotation-box {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: #fdfdfd;
+    border: 2px #000;
+    border-radius: 6px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    display: none;
+}
+
+#annotation-box h4 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#annotation-box p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.annotation-note-title {
+    font-weight: bold;
+}
+
+.annotation-note-label {
+    font-size: 12px;
+    fill: #555;
+}
+
