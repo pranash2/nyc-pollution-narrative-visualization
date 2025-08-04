@@ -16,7 +16,7 @@ const annotations = {
     },
     1: {
         title: "Scene 2 Observations",
-        text: "While the overall pollution (NO2) level of New York City has been on a decline, it's still important to look at the individual boroughs or neighborhoods of New York City. As you can see, Manhattan has the highest amount of pollution compared to the other four popular boroughs. This shows how the center of New York City contributes the most to pollution, which is probably due to all the activity of businesses since it's a city center."
+        text: "While the overall pollution (NO2) level of New York City has been on a decline, it's still important to look at the individual boroughs or neighborhoods of New York City. As you can see, Manhattan has the highest amount of pollution compared to the other four popular boroughs. This shows how the center of New York City contributes the most to pollution, which is probably due to all the activity in the borough because of businesses and population since it's a city center."
     },
     2: {
         title: "Scene 3 Observations",
