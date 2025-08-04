@@ -223,7 +223,6 @@ function drawScene3() {
         const width = 800;
         const height = 500;
 
-        // const svg = d3.select("#viz").append("div").attr("id", "scene3-container").append("svg").attr("width", width).attr("height", height);
         const graph = d3.select("#viz").append("div").attr("id", "scene3-container");
         const dropdowns = graph.append("div").attr("id", "dropdowns").style("margin-bottom", "10px");
         const svg = graph.append("svg").attr("width", width).attr("height", height);
@@ -239,14 +238,6 @@ function drawScene3() {
         dropdowns.append("label").text(" To ");
         const toDropdown = dropdowns.append("select").attr("id", "toYear");
         toDropdown.selectAll("option").data(years).enter().append("option").attr("value", d=>d).text(d=>d);
-
-        // d3.select("#scene3-container").append("label").text("From");
-        // const fromDropdown = d3.select("#scene3-container").append("select").attr("id", "fromYear");
-        // fromDropdown.selectAll("option").data(years).enter().append("option").attr("value", d=>d).text(d=>d);
-
-        // d3.select("#scene3-container").append("label").text(" To ");
-        // const toDropdown = d3.select("#scene3-container").append("select").attr("id", "toYear");
-        // toDropdown.selectAll("option").data(years).enter().append("option").attr("value", d=>d).text(d=>d);
 
         fromDropdown.property("value", years[0]);
         toDropdown.property("value", years[years.length-1]);
@@ -268,7 +259,6 @@ function drawScene3() {
                 const year = d.date.getFullYear();
                 return year >= fromYear && year <= toYear;
             }).sort((a,b) => a.date - b.date);
-            // const filtered = data.filter(d=>d["Geo Place Name"] === selectedBorough).sort((a,b)=>a.date-b.date);
             x.domain(d3.extent(filtered, d=>d.date));
             y.domain([0, d3.max(filtered, d=>d.value)]).nice();
 
